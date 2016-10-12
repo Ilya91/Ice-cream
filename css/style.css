@@ -1,0 +1,14 @@
+body{
+    background-color: #849d8f;
+}
+.container{
+    min-width:860px;
+    max-width:1146px;
+    margin:0 auto;
+    padding: 0 2.2%;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
