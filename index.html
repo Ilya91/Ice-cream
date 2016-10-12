@@ -5,14 +5,17 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Ice-cream</title>
 </head>
 <body>
+<div class="wrapper-background">
     <div class="container">
         <header class="main-header">
             <nav class="main-menu">
+                <div class="logo">
+                    <img src="img/logo-gllacy.svg" alt="Логотип Глейси" width="154" height="64"></div>
                 <ul>
-                    <li><a href="/"><img src="/img/logo.png" alt="logo"></a></li>
                     <li><a href="catalog.html">Каталог</a>
                         <ul class="submenu">
                             <li><a href="">Новинки</a></li>
@@ -26,27 +29,53 @@
                     <li><a href="">О Компании</a></li>
                 </ul>
             </nav>
-            <ul class="actions-menu">
-                <li class="search"></li>
-                <li class="enter">Вход</li>
-                <li class="busket">Пусто</li>
-            </ul>
-            <div class="header-info">
+            <div class="user-block">
+                <div class="user-block-item user-block-item_search">
+                    <form action="">
+                        <div>
+                            <input type="text">
+                            <label for=""></label>
+                        </div>
+                    </form>
+                </div>
+                <div class="user-block-item user-block-item_login">
+                    Вход
+                    <form action="">
+                        <div>
+                            <input type="text">
+                            <label for=""></label>
+                        </div>
+                        <div>
+                            <input type="text">
+                            <label for=""></label>
+                        </div>
+                        <button class="btn"></button>
+                        <div class="user-block-links">
+                            <a class="user-block__link" href="#">Забыли пароль?</a>
+                            <a class="user-block__link" href="#">Новая регистрация</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="user-block-item  user-block-item_cart">Пусто</div>
+            </div>
+            <div class="header-contacts">
                 <p>С 10 до 20, ежедневно</p>
                 <span>8 812 450-25-25</span>
             </div>
         </header>
+        <main class="content">
         <section class="slider">
             <div class="slide1">
-                <h1>Крем-брюле и пломбир
-                    с малиновым джемом</h1>
+                <h2>Крем-брюле и пломбир
+                    с малиновым джемом</h2>
+                <a href="" class="btn">Давайте оба!</a>
             </div>
-            <div class="controls">
+            <div class="slider-controls">
                 <label><input type="radio" name="slider" checked></label>
                 <label><input type="radio" name="slider"></label>
                 <label><input type="radio" name="slider"></label>
             </div>
-            <a href="" class="btn">Давайте оба!</a>
+
         </section>
         <section class="banners">
             <article class="banner-left">
@@ -66,60 +95,67 @@
         </section>
         <section class="hits">
             <article class="hits-item">
-                    <img src="/img/hit1.png" alt="hit1">
+                <a href=""><img src="/img/hit1.png" alt="hit1"></a>
                 <p class="hits-item-price">
                     310    /кг
                 </p>
-                <a href="" class="hits-item-name"></a>
+                <h3><a href="" class="hits-item-name">Сливочное с апельсиновым
+                    джемом и цитрусовой стружкой</a></h3>
+                <a class="btn" href="#">Быстрый просмотр</a>
             </article>
             <article class="hits-item">
-                <img src="/img/hit1.png" alt="hit1">
+                <a href=""><img src="/img/hit1.png" alt="hit1"></a>
                 <p class="hits-item-price">
                     310    /кг
                 </p>
-                <a href="" class="hits-item-name"></a>
+                <h3><a href="" class="hits-item-name">Сливочное с апельсиновым
+                    джемом и цитрусовой стружкой</a></h3>
+                <a class="btn" href="#">Быстрый просмотр</a>
             </article>
             <article class="hits-item">
-                <img src="/img/hit1.png" alt="hit1">
+                <a href=""><img src="/img/hit1.png" alt="hit1"></a>
                 <p class="hits-item-price">
                     310    /кг
                 </p>
-                <a href="" class="hits-item-name"></a>
+                <h3><a href="" class="hits-item-name">Сливочное с апельсиновым
+                    джемом и цитрусовой стружкой</a></h3>
+                <a class="btn" href="#">Быстрый просмотр</a>
             </article>
             <article class="hits-item">
-                <img src="/img/hit1.png" alt="hit1">
+                <a href=""><img src="/img/hit1.png" alt="hit1"></a>
                 <p class="hits-item-price">
                     310    /кг
                 </p>
-                <a href="" class="hits-item-name"></a>
+                <h3><a href="" class="hits-item-name">Сливочное с апельсиновым
+                    джемом и цитрусовой стружкой</a></h3>
+                <a class="btn" href="#">Быстрый просмотр</a>
             </article>
         </section>
         <section class="seo">
-            <h3>Магазин Глейси  — это онлайн и офлайн магазин по
-                продаже мороженого собственного производства на развес</h3>
-            <ul class="seo-left">
-                <li>
-                    <p>Все наше мороженое изготавливается на собственном
-                        производстве, с использованием современного
-                        оборудования и проверенных временем технологий.</p>
+            <div><b>Магазин Глейси  — это онлайн и офлайн магазин по
+                продаже мороженого собственного производства на развес</b></div>
+            <ul class="seo-list">
+                <li class="seo__item">
+                    Все наше мороженое изготавливается на собственном
+                    производстве, с использованием современного
+                    оборудования и проверенных временем технологий.
                 </li>
-                <li>
-                    <p>Для приготовления мороженого используются настоящие сливки и
-                        молоко высочайшего качества. Все дополнительные
-                        ингредиенты и добавки произведены
-                        из натурального, экологически чистого сырья. </p>
+                <li class="seo__item">
+                    Закупки ингредиентов производиться только у провереных фермерских
+                    хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
                 </li>
-            </ul>
+                <li class="seo__item">
+                    Для приготовления мороженого используются настоящие
+                    сливки и молоко высочайшего качества. Все дополнительные
+                    ингредиенты и добавки произведены из натурального,
+                    экологически чистого сырья.
 
-            <ul class="seo-right">
-                <li>
-                    <p>Закупка ингредиентов  производится только у проверенных фермерских
-                        хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
                 </li>
-                <li>
-                    <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
-                        которая не дает мороженому растаять в пути и позволяет
-                        ему сохранить свой превосходный вкус.</p>
+                <li class="seo__item">
+                    Доставка нашего мороженого до заказчиков
+                    осуществляется в специальном термопаке,
+                    который не дает мороженому растаять в
+                    пути и позволяет сохранить превосходный вкус.
                 </li>
             </ul>
         </section>
@@ -137,11 +173,13 @@
                     всякой не нужной ерунды. Честно =) </p>
                 <form action="form.php" method="post">
                     <input type="email" placeholder="Электронная почта">
-                    <input type="submit" value="Отправить">
+                    <button class="btn" type="submit">Отправить</button>
                 </form>
             </div>
         </section>
+        </main>
     </div>
+
 <div class="map">
     <div class="container">
         <div class="contacts">
@@ -158,15 +196,16 @@
             </div>
         </div>
     </div>
-</div>
+    </div>
+
 <footer class="main-footer">
     <div class="container">
         <section class="socials">
             <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
+                <li><a href="">Twitter</a></li>
+                <li><a href="">Instagram</a></li>
+                <li><a href="">Facebook</a></li>
+                <li><a href="">Vk</a></li>
             </ul>
         </section>
         <section class="footer-menu">
@@ -182,5 +221,6 @@
         </section>
     </div>
 </footer>
+</div>
 </body>
 </html>
