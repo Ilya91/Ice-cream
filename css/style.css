@@ -24,6 +24,11 @@ ul{
     padding:0;
     list-style: none;
 }
+.wrapper-background{
+    background-image: url(../img/slide1.png);
+    background-repeat:no-repeat;
+    background-position: center top;
+}
 .container{
     min-width:860px;
     max-width:1146px;
@@ -37,6 +42,7 @@ ul{
 }
 .main-header{
     padding-top:8px;
+    position: relative;
 }
 .logo{
     margin-right:14px;
@@ -98,32 +104,75 @@ ul{
     vertical-align: middle;
     padding-top:8px;
     box-sizing: border-box;
+    cursor: pointer;
+
+}
+.user-block-item:hover{
+    background-color: #fff;
+    color: #323232;
 }
 .user-block-item_search{
     width: 32px;
+    background-image: url(../img/search.svg);
+    background-repeat:no-repeat;
+    background-position: 7px 7px;
+}
+.user-block-item_search:hover{
+    background-image: url(../img/search-hover.svg);
 }
 .user-block-item_login{
     width: 92px;
     padding-left:45px;
+    background-image: url(../img/enter.svg);
+    background-repeat:no-repeat;
+    background-position: 16px 7px;
+}
+.user-block-item_login:hover{
+    background-image: url(../img/enter-hover.svg);
 }
 .user-block-item_cart{
     width: 117px;
     padding-left:45px;
+    background-image: url(../img/busket.svg);
+    background-repeat:no-repeat;
+    background-position: 16px 6px;
+}
+.user-block-item_cart:hover{
+    background-image: url(../img/busket-hover.svg);
 }
 .header-contacts{
-    float: right;
+    position: absolute;
+    right:0;
+    text-align: right;
+    top:55px;
+    color: #fff;
+}
+.header-contacts p{
+    font-size:14px;
+    line-height:14px;
+    font-weight:500;
+    margin-bottom:10px;
+}
+.header-contacts span{
+    font-size:22px;
+    line-height:22px;
+    font-weight:600;
 }
 .slider{
     position: relative;
+}
+.slider h2{
+    color: #fff;
+    font-size:60px;
+    line-height:60px;
+    font-weight:600;
+    margin-top:309px;
 }
 .slider-controls{
     position: absolute;
 }
 .slide1{
     text-align: center;
-}
-.slide1 h2{
-    margin-top:279px;
 }
 .banners{
     margin-bottom:40px;
