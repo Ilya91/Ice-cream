@@ -59,11 +59,11 @@ ul{
 .header-menu{
     margin-top:13px;
 }
-.header-menu li{
+.item-menu{
     float: left;
     padding:8px 13px;
 }
-.header-menu li a{
+.item-menu a{
     font-family: Roboto, Helvetica, sans-serif;
     color: #ffffff;
     font-size:16px;
@@ -74,33 +74,64 @@ ul{
     border-bottom: 1px solid #bfd0c7;
     padding-bottom:2px;
 }
-.header-menu li:hover{
+.item-menu:hover{
     background-color: #f7f6f3;
     border-radius:18px;
 }
-.header-menu li:hover a{
+.item-menu:hover a{
     color: #333333;
     border:none;
 }
 .submenu{
     display: none;
-}
-.submenu li{
-    float: none;
-}
-.submenu li a{
-    display: block;
-}
-.catalog-menu{
-    position: relative;
-}
-.catalog-menu:hover .submenu{
-    display: block;
     position: absolute;
     top:40px;
     left:-7px;
     background-color: #f8f7f4;
     border-radius:5px;
+    width: 143px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, .3);
+}
+.submenu li.submenu-title{
+    color: #343434;
+    font-size:14px;
+    font-weight:600;
+    padding:12px 60px 15px 14px;
+    line-height:14px;
+    border-bottom: 1px solid #d1d0ce;
+    margin-left:6px;
+    display: inline-block;
+}
+.submenu li{
+    float: none;
+    padding:0;
+    margin-bottom:5px;
+}
+.submenu li a{
+    color: #343434;
+    font-size:14px;
+    font-family: Roboto, Helvetica, sans-serif;
+    font-weight: normal;
+    border-bottom: none;
+    padding:7px 20px;
+    line-height:14px;
+}
+.submenu li a:hover{
+    background-color: #fbded8;
+}
+.catalog-menu{
+    position: relative;
+}
+.catalog-menu::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height:15px;
+    left:-7px;
+}
+.catalog-menu:hover .submenu{
+    display: block;
 }
 .user-block{
     float: right;
