@@ -369,6 +369,21 @@ ul{
     margin:0;
     left:0;
     bottom:40px;
+    text-shadow: 0 1px 3px rgba(49, 50, 53, .5);
+}
+.hits-item-price span{
+    font-size:30px;
+    padding-left:32px;
+}
+.hits-item-price::before{
+    content: "";
+    position: absolute;
+    top:-9px;
+    left:84px;
+    width: 32px;
+    height: 37px;
+    background-image: url(../img/Р.svg);
+    background-repeat: no-repeat;
 }
 .hits-item-img-price{
     width: 100%;
