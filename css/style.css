@@ -421,13 +421,56 @@ ul{
     text-decoration: none;
 }
 .seo{
-    padding:25px 20px;
-    background-color: #ECE0C8;
+    padding:25px 1.1% 0 1.1%;
+    background: #ECE0C8 url("../img/seo-bg.jpg") repeat;
     margin-bottom:40px;
+    border-radius:17px;
+    box-sizing: border-box;
+}
+.seo b{
+    font-size:24px;
+    line-height:30px;
+    font-weight:500;
+    margin-bottom:24px;
+    display: inline-block;
+    color: #323232;
+
 }
 .seo__item{
     display: inline-block;
-    width:48.9%;
+    vertical-align: top;
+    width:47.8%;
+    color: #323232;
+    line-height:22px;
+    font-size:16px;
+    padding-left:55px;
+    box-sizing: border-box;
+    margin-bottom:24px;
+    position: relative;
+    margin-right:2.2%;
+}
+.seo__item:nth-child(2n){
+    margin-right:0;
+}
+.seo__item::before{
+    content: "";
+    position: absolute;
+    width: 48px;
+    height:48px;
+    left:0;
+    top:-12px;
+}
+.seo-production::before{
+    background: url("../img/seo-production.svg") no-repeat;
+}
+.seo-cow::before{
+background: url("../img/seo-cow.svg") no-repeat;
+}
+.seo-leaf::before{
+    background: url("../img/seo-leaf.svg") no-repeat;
+}
+.seo-temperature::before{
+    background: url("../img/seo-temperature.svg") no-repeat;
 }
 .news{
     margin-bottom:40px;
