@@ -500,6 +500,9 @@ background: url("../img/seo-cow.svg") no-repeat;
     line-height:30px;
     color: #353535;
     font-weight:600;
+    background: rgba(255, 255, 255, .8);
+    padding-right:10px;
+    display: inline-block;
 }
 .email-seller{
     float: right;
@@ -513,6 +516,12 @@ background: url("../img/seo-cow.svg") no-repeat;
     box-sizing: border-box;
     border-radius:17px;
     height:210px;
+    position: relative;
+}
+.subscribe-inner{
+    position: absolute;
+    width: 100%;
+    bottom:30px;
 }
 .subscribe-wrapper p{
     margin:0;
@@ -522,8 +531,9 @@ background: url("../img/seo-cow.svg") no-repeat;
     line-height:22px;
     margin-bottom:35px;
 }
+
 .subscribe-form{
-    width:100%;
+    width:93%;
     padding-right:148px;
     box-sizing: border-box;
     position: relative;
@@ -548,12 +558,26 @@ background: url("../img/seo-cow.svg") no-repeat;
 input:focus{
     outline:none;
 }
-.map{
+.map-wrapper{
     height:430px;
     background-color: #fff;
 }
+#map{
+    height:430px;
+    z-index:1;
+}
+.map-container{
+    position: relative;
+}
 .contacts{
-    float: right;
+    position: absolute;
+    right:0;
+    top:65px;
+    background-color: #fff;
+    padding:30px 25px;
+    border-radius:17px;
+    z-index:10;
+    box-sizing: border-box;
 }
 .socials{
     float: left;
