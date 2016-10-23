@@ -628,6 +628,7 @@ p.contacts-phone-number{
 }
 .socials li{
     margin-right:12px;
+    float: left;
 }
 .socials li:last-child{
     margin-right:0;
@@ -672,7 +673,7 @@ p.contacts-phone-number{
 .footer-menu{
     float: left;
     margin-left:15%;
-    margin-top:15px;
+    margin-top:9px;
     width:310px;
     box-sizing: border-box;
 }
@@ -688,6 +689,9 @@ p.contacts-phone-number{
     line-height:13px;
     font-weight:300;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.footer-menu a:hover{
+    border-bottom:none;
 }
 a.footer-menu-sellers{
     font-weight:500;
@@ -707,7 +711,23 @@ a.footer-menu-sellers{
 }
 .copyright{
     float: right;
+    width: 165px;
+    text-align: left;
 }
-.socials ul li{
-    float: left;
+.footer-logo{
+    background: url("../img/footer-logo.svg") no-repeat;
+    width: 107px;
+    height:36px;
+    margin-bottom:5px;
+}
+.copyright p, a{
+    font-size:12px;
+    margin:0;
+}
+.copyright a{
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.copyright a:hover{
+    border-bottom:none;
 }
