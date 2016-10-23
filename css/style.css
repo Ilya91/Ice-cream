@@ -624,10 +624,13 @@ p.contacts-phone-number{
 .socials{
     float: left;
     margin-top:17px;
-    width:18%;
+    width:190px;
 }
 .socials li{
     margin-right:12px;
+}
+.socials li:last-child{
+    margin-right:0;
 }
 .btn-social{
     width: 31px;
@@ -668,14 +671,13 @@ p.contacts-phone-number{
 }
 .footer-menu{
     float: left;
-    margin-left:17%;
+    margin-left:15%;
     margin-top:15px;
-    width:30%;
+    width:310px;
     box-sizing: border-box;
 }
 .footer-menu-left{
-     width: 34%;
-    margin-right:6%;
+    margin-right:30px;
  }
 .footer-menu ul li{
     margin-bottom:5px;
@@ -687,8 +689,18 @@ p.contacts-phone-number{
     font-weight:300;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-.footer-menu a:hover{
+a.footer-menu-sellers{
     font-weight:500;
+    position: relative;
+}
+.footer-menu-sellers::before{
+    content: "";
+    position: absolute;
+    width: 14px;
+    height:12px;
+    background: url("../img/heart.svg") no-repeat;
+    left:-20px;
+    top:4px;
 }
 .footer-menu ul{
     float: left;
