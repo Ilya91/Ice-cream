@@ -365,6 +365,8 @@ body > input[type="radio"] {
     position: absolute;
     right:30px;
     bottom:22px;
+    font-size:18px;
+    font-weight:500;
 }
 .hits{
     margin-bottom:40px;
@@ -685,9 +687,13 @@ p.contacts-phone-number{
     margin-top:17px;
     width:190px;
 }
+.socials ul{
+    letter-spacing: -0.3em;
+}
 .socials li{
     margin-right:12px;
-    float: left;
+    display: inline-block;
+    vertical-align: top;
 }
 .socials li:last-child{
     margin-right:0;
@@ -698,7 +704,7 @@ p.contacts-phone-number{
     display: block;
     background-repeat:no-repeat;
     opacity:.8;
-    border: 3px solid #c2cec7;
+    border: 3px solid rgba(255, 255, 255, .5);
     border-radius:50%;
 }
 .btn-social-twitter{
@@ -714,7 +720,7 @@ p.contacts-phone-number{
     background-image: url(../img/btn-vk.svg);
 }
 .btn-social:hover{
-    margin: -2px;
+    margin:-2px;
     opacity:.98;
     border: 5px solid rgba(255, 255, 255, 0.71);
 }
