@@ -24,11 +24,31 @@ ul{
     padding:0;
     list-style: none;
 }
+body > input[type="radio"] {
+    display: none;
+}
 .wrapper-background{
     background-image: url(../img/slide1.png);
     background-repeat:no-repeat;
     background-position: center top;
+    -webkit-transition: background-image 0.5s ease, background-color 0.5s ease;
+    transition: background-image 0.5s ease, background-color 0.5s ease;
 }
+/*
+.wrapper-background:before,
+.wrapper-background:after {
+    content: "";
+    visibility: hidden;
+}
+
+.wrapper-background:before {
+    background-image: url("../img/slide2.png");
+}
+
+.wrapper-background:after {
+    background-image: url("../img/slide3.png");
+}*/
+
 .container{
     min-width:860px;
     max-width:1146px;
@@ -139,7 +159,7 @@ ul{
 }
 .user-block-item{
     display: inline-block;
-    background-color: #9db1a5;
+    background-color: rgba(255, 255, 255, .2);
     margin-left:10px;
     border-radius:18px;
     font-size:14px;
@@ -207,11 +227,6 @@ ul{
     position: relative;
     margin-bottom:24px;
 }
-.slider-controls{
-    position: absolute;
-    left:0;
-    bottom:20px;
-}
 .slider h2{
     color: #fff;
     font-size:60px;
@@ -219,6 +234,53 @@ ul{
     font-weight:600;
     margin-top:309px;
     margin-bottom:35px;
+}
+.slider-paginator {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    font-size: 0;
+}
+.slider-paginator__label{
+    display: inline-block;
+    vertical-align: top;
+    margin-right:8px;
+    width: 16px;
+    height:16px;
+    border-radius:50%;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+.slider-paginator__label:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+#slider-btn-1:checked ~ .wrapper-background label[for="slider-btn-1"],
+#slider-btn-2:checked ~ .wrapper-background label[for="slider-btn-2"],
+#slider-btn-3:checked ~ .wrapper-background label[for="slider-btn-3"] {
+    background-color: #ffffff;
+}
+
+.slide1, .slide2, .slide3{
+    text-align: center;
+    display: none;
+}
+#slider-btn-1:checked ~ .wrapper-background .slide1,
+#slider-btn-2:checked ~ .wrapper-background .slide2,
+#slider-btn-3:checked ~ .wrapper-background .slide3 {
+    display: block;;
+}
+#slider-btn-2:checked ~ .wrapper-background{
+    background: url("../img/slide2.png");
+    background-color: #8996a6;
+    background-repeat:no-repeat;
+    background-position: center top;
+}
+
+#slider-btn-3:checked ~ .wrapper-background{
+    background: url("../img/slide3.png");
+    background-color: #9d8b84;
+    background-repeat:no-repeat;
+    background-position: center top;
 }
 .btn{
     background-color: #ec583c;
@@ -263,9 +325,6 @@ ul{
     line-height:62px;
 }
 
-.slide1{
-    text-align: center;
-}
 .banners{
     margin-bottom:40px;
     color: #fff;
