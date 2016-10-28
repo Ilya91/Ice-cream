@@ -187,6 +187,7 @@ body > input[type="radio"] {
     background-image: url(../img/search-hover.svg);
 }
 .user-block-item_login{
+    position: relative;
     width: 92px;
     padding-left:45px;
     background-image: url(../img/enter.svg);
@@ -197,6 +198,7 @@ body > input[type="radio"] {
     background-image: url(../img/enter-hover.svg);
 }
 .user-block-item_cart{
+    position: relative;
     width: 117px;
     padding-left:45px;
     background-image: url(../img/busket.svg);
@@ -812,7 +814,19 @@ a.footer-menu-sellers{
     height:15px;
     bottom:-7px;
 }
+.user-block-item_login::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height:28px;
+    bottom:-17px;
+    left:0;
+}
 .user-block-item:hover .modal-search{
+    display: block;
+}
+.user-block-item:hover .modal-auth{
     display: block;
 }
 .user-block__field{
@@ -854,10 +868,42 @@ a.footer-menu-sellers{
     transform: translateY(-20px);
 }
 .modal-search{
+      right:0;
+      top:38px;
+      display: none;
+}
+.modal-auth{
     right:0;
     top:38px;
     display: none;
 }
 .user-block__field-wrapper{
     position: relative;
+}
+.user-block__field-email, .user-block__field-password{
+    width: 240px;
+    margin-bottom:10px;
+}
+.user-block__field-email, .user-block__field-password{
+    width: 240px;
+    margin-bottom:15px;
+}
+.btn-login{
+    font-size:15px;
+    padding:10px 30px;
+    float: left;
+}
+.login-links{
+    float: right;
+    display: inline;
+    margin:0;
+}
+a.login-links-item{
+    color: #333333;
+    font-size:13px;
+    display: inline-block;
+    margin-bottom:6px;
+}
+a.login-links-item:last-child{
+    margin-bottom:0;
 }
