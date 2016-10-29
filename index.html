@@ -10,6 +10,9 @@
     <title>Ice-cream</title>
 </head>
 <body>
+<input type="radio" name="slider" id="slider-btn-1" checked>
+<input type="radio" name="slider" id="slider-btn-2">
+<input type="radio" name="slider" id="slider-btn-3">
 <div class="wrapper-background">
     <div class="container">
         <header class="main-header clearfix">
@@ -32,12 +35,64 @@
             </nav>
             <div class="user-block clearfix">
                 <div class="user-block-item user-block-item_search">
+                    <div class="modal modal-search">
+                        <form action="" method="post" class="user-block__fieldset">
+                            <div class="user-block__field-wrapper">
+                                <input class="user-block__field"   id="field-search" name="search" type="search">
+                                <label  class="user-block__label"  for="field-search">Что ищем?</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="user-block-item user-block-item_login">
+                    <div class="modal modal-auth">
+                        <form action="" method="post" class="user-block__fieldset">
+                            <div class="user-block__field-wrapper">
+                                <input class="user-block__field user-block__field-email"   id="field-email" name="search" type="email">
+                                <label  class="user-block__label"  for="field-email">Электронная почта</label>
+                            </div>
+                            <div class="user-block__field-wrapper">
+                                <input class="user-block__field user-block__field-password"   id="field-password" name="search" type="password">
+                                <label  class="user-block__label"  for="field-password">Пароль</label>
+                            </div>
+                            <button class="btn btn-login">Войти</button>
+                            <p class="login-links">
+                                <a href="" class="login-links-item">Забыли пароль?</a> <br>
+                                <a href="" class="login-links-item">Новая регистрация</a>
+                            </p>
+                        </form>
+                    </div>
+                    Вход
 
                 </div>
-                <div class="user-block-item user-block-item_login">
-                    Вход
+                <div class="user-block-item  user-block-item_cart">
+                    <div class="modal modal-cart">
+                        <table class="cart-table">
+                            <tr class="cart-item">
+                                <td class="cart-cross-delete"></td>
+                                <td class="cart-img"><img src="/img/item-cart1.png" alt="item-cart1"></td>
+                                <td class="cart-product-name">Пломбир с апельсиновым джемом</td>
+                                <td class="cart-cost">1,5 кг <span>х 200 руб.</span></td>
+                                <td class="cart-price">300 руб.</td>
+                            </tr>
+
+                            <tr class="cart-item">
+                                <td class="cart-cross-delete"></td>
+                                <td class="cart-img"><img src="/img/item-cart2.png" alt="item-cart2"></td>
+                                <td class="cart-product-name">Клубничный пломбир с присыпкой
+                                    из белого шоколада</td>
+                                <td class="cart-cost">1,5 кг <span>х 200 руб.</span></td>
+                                <td class="cart-price">300 руб.</td>
+                            </tr>
+                        </table>
+                        <div class="cart-total-info">
+                            <p class="total-price">Итого:750 руб.</p>
+                            <a href="" class="btn">Оформить заказ</a>
+                        </div>
+                    </div>
+                    Пусто
                 </div>
-                <div class="user-block-item  user-block-item_cart">Пусто</div>
             </div>
             <div class="header-contacts">
                 <p>С 10 до 20, ежедневно</p>
@@ -50,10 +105,20 @@
                 <h2>Крем-брюле и пломбир<br>с малиновым джемом</h2>
                 <a href="" class="btn btn-slider">Давайте оба!</a>
             </div>
-            <div class="slider-controls">
-                <label><input type="radio" name="slider" checked></label>
-                <label><input type="radio" name="slider"></label>
-                <label><input type="radio" name="slider"></label>
+            <div class="slide2">
+                <h2>Шоколадный пломбир <br>
+                    и лимонный сорбет </h2>
+                <a href="" class="btn btn-slider">Давайте оба!</a>
+            </div>
+            <div class="slide3">
+                <h2>Пломбир с помадкой <br>
+                    и клубничный щербет</h2>
+                <a href="" class="btn btn-slider">Давайте оба!</a>
+            </div>
+            <div class="slider-paginator">
+                <label class="slider-paginator__label" for="slider-btn-1"></label>
+                <label class="slider-paginator__label" for="slider-btn-2"></label>
+                <label class="slider-paginator__label" for="slider-btn-3"></label>
             </div>
 
         </section>
@@ -123,23 +188,23 @@
             <div><b>Магазин Глейси  — это онлайн и офлайн магазин по
                 продаже мороженого собственного производства на развес</b></div>
             <ul class="seo-list">
-                <li class="seo__item">
+                <li class="seo__item seo-production">
                     Все наше мороженое изготавливается на собственном
                     производстве, с использованием современного
                     оборудования и проверенных временем технологий.
                 </li>
-                <li class="seo__item">
+                <li class="seo__item seo-cow">
                     Закупки ингредиентов производиться только у провереных фермерских
                     хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
                 </li>
-                <li class="seo__item">
+                <li class="seo__item seo-leaf">
                     Для приготовления мороженого используются настоящие
                     сливки и молоко высочайшего качества. Все дополнительные
                     ингредиенты и добавки произведены из натурального,
                     экологически чистого сырья.
 
                 </li>
-                <li class="seo__item">
+                <li class="seo__item seo-temperature">
                     Доставка нашего мороженого до заказчиков
                     осуществляется в специальном термопаке,
                     который не дает мороженому растаять в
@@ -150,67 +215,76 @@
         <section class="news clearfix">
             <div class="news-of-blog">
                 <p>Новое в нашем блоге</p>
-                <a href="">10  способов сервировки
-                    фруктовых щербетов
+                <a href="" class="title-of-news">10  способов сервировки<br>
+                    фруктовых щербетов<br>
                     к столу</a>
             </div>
-            <div class="emal-seller">
-                <p>Подпишитесь на нашу сладкую рассылку и будете
-                    всегда в курсе всего самого вкусного, что у
-                    нас происходит. Обещаем не спамить и не слать
-                    всякой не нужной ерунды. Честно =) </p>
-                <form action="form.php" method="post">
-                    <input type="email" placeholder="Электронная почта">
-                    <button class="btn" type="submit">Отправить</button>
-                </form>
+            <div class="email-seller">
+                <div class="subscribe-wrapper">
+                    <p>Подпишитесь на нашу сладкую рассылку и будете
+                        всегда в курсе всего самого вкусного, что у
+                        нас происходит. Обещаем не спамить и не слать
+                        всякой не нужной ерунды. Честно =) </p>
+                    <div class="subscribe-inner">
+                        <form action="form.php" method="post" class="subscribe-form">
+                            <input type="email" placeholder="Электронная почта">
+                            <button class="btn btn-subscribe" type="submit">Отправить</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </section>
         </main>
     </div>
 
-<div class="map">
-    <div class="container">
+<div class="map-wrapper">
+    <div class="container map-container clearfix">
         <div class="contacts">
             <div class="contacts-address">
-                <p>Адрес главного офиса и
+                <p class="contacts-address-title">Адрес главного офиса и <br>
                     офлайн магазина:</p>
-                <p>ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+                <p class="contacts-address-point">ул. Большая Конюшенная <br>19/8, Санкт-Петербург</pcontacts-address-title>
             </div>
             <div class="contacts-phone">
                 <p>Для заказов по телефону:</p>
-                <p>8 812 450-25-25</p>
+                <p class="contacts-phone-number">8 812 450-25-25</p>
                 <p>(с 10 до 20 ежедневно)</p>
-                <button class="btn">Форма обратной связи</button>
             </div>
+            <button class="btn map-contacts">Форма обратной связи</button>
         </div>
     </div>
+    <div id="map"></div>
     </div>
 
 <footer class="main-footer">
     <div class="container clearfix">
         <section class="socials">
             <ul>
-                <li><a href="">Twitter</a></li>
-                <li><a href="">Instagram</a></li>
-                <li><a href="">Facebook</a></li>
-                <li><a href="">Vk</a></li>
+                <li><a class="btn-social btn-social-twitter" href=""></a></li>
+                <li><a class="btn-social btn-social-instagram" href=""></a></li>
+                <li><a class="btn-social btn-social-facebook" href=""></a></li>
+                <li><a class="btn-social btn-social-vkontakte" href=""></a></li>
             </ul>
         </section>
         <section class="footer-menu">
-            <ul>
-                <li><a href="">Для поставщиков</a></li>
+            <ul class="footer-menu-left">
+                <li><a class="footer-menu-sellers" href="">Для поставщиков</a></li>
                 <li><a href="">О производстве</a></li>
             </ul>
-            <ul>
+            <ul class="footer-menu-right">
                 <li><a href="">Наши документы</a></li>
                 <li><a href="">Экологические стандарты</a></li>
             </ul>
         </section>
         <section class="copyright">
+            <div class="footer-logo"></div>
             <p>Сделано в <a href="">MirWebDiz</a> © 2016</p>
         </section>
     </div>
 </footer>
 </div>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDb_NxbNI4QPX0qXQ6OO_Sw1TaYnDtfxxI&callback=initialize">
+</script>
+<script src="js/script.js"></script>
 </body>
 </html>
