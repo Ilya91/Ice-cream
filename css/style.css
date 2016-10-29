@@ -877,6 +877,16 @@ a.footer-menu-sellers{
     top:38px;
     display: none;
 }
+.modal-cart{
+    right:0;
+    top:38px;
+    width: 540px;
+    color: #333333;
+    padding:25px 15px 20px 15px;
+    cursor: default;
+    box-sizing: border-box;
+    /*display: none;*/
+}
 .user-block__field-wrapper{
     position: relative;
 }
@@ -906,4 +916,53 @@ a.login-links-item{
 }
 a.login-links-item:last-child{
     margin-bottom:0;
+}
+.cart-table{
+    border-bottom: 1px solid #cacac7;
+}
+.cart-table td{
+    display: inline-block;
+    vertical-align: middle;
+}
+.cart-item{
+    display: block;
+}
+.cart-table tr{
+    margin-bottom:20px;
+}
+.cart-cross-delete{
+    width: 10px;
+    height:10px;
+    background: url("../img/cart-dalete.svg") no-repeat;
+    margin-right:14px;
+    cursor: pointer;
+ }
+.cart-img{
+    width: 33px;
+    height:33px;
+    border-radius:50%;
+    margin-right:14px;
+}
+.cart-product-name{
+    margin-right:30px;
+    font-size:13px;
+    width: 218px;
+}
+td.cart-cost{
+    font-size:13px;
+    margin-right:30px;
+}
+.cart-cost span{
+    color: #808080;
+}
+.cart-price{
+    font-size:13px;
+}
+.cart-total-info{
+    text-align: right;
+}
+.delete-product-cart{
+    display: none;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
 }
